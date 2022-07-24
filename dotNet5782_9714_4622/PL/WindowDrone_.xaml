@@ -1,0 +1,156 @@
+﻿<Window x:Class="PL.WindowDrone_"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        mc:Ignorable="d"
+        Title="WindowDrone_" Height="640" Width="800" WindowStartupLocation="CenterOwner">
+    <Grid Margin="0,1,0,-1" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="5*"/>
+
+        </Grid.ColumnDefinitions >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="GirAdd"  Grid.ColumnSpan="3" Visibility="Hidden" Margin="123,39,130,10" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="100*"/>
+            </Grid.ColumnDefinitions >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="20*"/>
+            </Grid.RowDefinitions>
+            <Label  Name="ID" Content="ID:" Grid.Column="0" HorizontalAlignment="Stretch" Grid.Row="0" VerticalAlignment="Stretch"   FontSize="16" />
+            <TextBox Name="IDN" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="0"  VerticalAlignment="Stretch"    TextChanged="IDN_TextChanged"  />
+            <Label  Name="IDNErrow" Visibility="Hidden" Foreground="#FFFA0909"    Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch"   FontSize="16" FontStyle="Normal" />
+            <Label   Name="Model" Content="Model:" Grid.Column="0" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"  FontSize="16" />
+            <TextBox Name="ModelN" Grid.Column="2"  Grid.Row="2"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  TextChanged="ModelN_TextChanged"/>
+            <Label  Name="ModelNErrow" Visibility="Hidden" Foreground="#FFFA0909"    Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch"   FontSize="16" FontStyle="Normal" />
+            <ComboBox  Name="WeightE" Grid.Column="2" FontSize="16" Grid.Row="4" SelectionChanged="WeightE_SelectionChanged"  />
+            <Label  Name="Weight" Content="Max Weight:" Grid.Column="0" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch"   FontSize="16" />
+            <Label Name="Station" Content="Station number:" Grid.Column="0" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"  FontSize="16"/>
+            <TextBox Name="StationN"  Grid.Column="2" Grid.Row="6" Text="" TextWrapping="Wrap"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextChanged="StationN_TextChanged" />
+            <Label  Name="StationNErrow" Visibility="Hidden" Foreground="#FFFA0909"    Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"   FontSize="16" FontStyle="Normal" />
+            <Button Name="add" IsEnabled="False" Content="Add the drone" Grid.Column="2" HorizontalAlignment="Stretch"  Grid.Row="16" VerticalAlignment="Stretch" FontSize="14" Click="add_Click" />
+        </Grid>
+
+        <Grid x:Name="actain" Visibility="Hidden" Grid.Row="0" Grid.Column="0"  Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.1*"/>
+            </Grid.RowDefinitions >
+            <Button  Name="provide" Content="provide parcel"   FontSize="14" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  IsEnabled="False"  Grid.Row="1" Click="provide_Click"/>
+            <Button  Name="freeFromCharning" Content="freeFromCharning" FontSize="14" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" IsEnabled="False" Grid.Row="3" Click="freeFromCharning_Click"/>
+            <Button Name="sendDroneCharn" Content="sendDroneCharning" FontSize="14" VerticalAlignment="Top" IsEnabled="False" Grid.Row="4" Click="sendDroneCharn_Click" Height="112" Margin="0,11,0,0" Grid.RowSpan="3"/>
+            <Button Name="sendDroneToShip" Content="sendDroneToDelivery" FontSize="14" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" IsEnabled="False" Grid.Row="7" Click="sendDroneToShip_Click"/>
+            <Button Name="Package" Content="parcel collection" IsEnabled="False" FontSize="14"  Grid.Row="9"  Margin="0,4,0,1" Click="Package_Click" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="2.511"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-2.356"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        </Grid>
+
+        <Grid x:Name="GirAct" Visibility="Hidden" Grid.Column="2" Grid.Row="1"  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="100*"/>
+            </Grid.ColumnDefinitions >
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="39.458"/>
+            </Grid.RowDefinitions>
+
+            <Label  Name="ID2" Content="ID:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16" />
+            <Label Name="IDN2" Content="{Binding ID}"  Grid.Column="2" Grid.Row="0" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label   Name="Model2" Content="Model:" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16" />
+            <TextBox Name="ModelN2" Text="{Binding model}" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16" TextChanged="ModelN2_TextChanged"     />
+            <Label  Name="Weight2" Content="Max Weight:" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16" />
+            <Label  Name="WeightN2" Content="{Binding weight}" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label  Name="Battery" Content="Battery:" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label   Name="BatteryN" Content="{Binding battery}"  Grid.Column="2" Grid.Row="3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label  Name="Status" Content="Status:" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label   Name="StatusN" Content="{Binding statusOfDrone}" Grid.Column="2" Grid.Row="4" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label  Name="location" Content="location:" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label   Grid.Row="5" Content="{Binding droneLocation}"  Grid.Column="2" FontSize="16"  />
+            <Button  Name="simolator" Content="simolator"  FontSize="14"  Grid.Row="9" Grid.ColumnSpan="1" Click="simolator_Click" />
+            <Button  Name="stop" Visibility="Hidden" Content="stop"  FontSize="14"  Grid.Row="8" Grid.ColumnSpan="1" Click="stop_Click"  />
+            <Button IsEnabled="False" Name="updating" Content="updating"  FontSize="14"  Grid.Row="9" Click="updating_Click" Grid.ColumnSpan="3" Margin="293,0,0,0"/>
+        </Grid>
+        <Grid x:Name="GirPaecel" Visibility="Hidden" Grid.Column="3" Grid.Row="3"  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="100*"/>
+            </Grid.ColumnDefinitions >
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="39.458"/>
+            </Grid.RowDefinitions>
+
+            <Label   Content="ID:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16" />
+            <Label  Content="{Binding ID}"  Grid.Column="2" Grid.Row="0" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label    Content="priority:" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16" />
+            <Label  Content="{Binding priority}" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"      />
+            <Label   Content="Max Weight:" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16" />
+            <Label  Content="{Binding weight}" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label   Content="sender:" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label    Content="{Binding sender}"  Grid.Column="2" Grid.Row="3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label  Content="recipient:" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label    Content="{Binding recipient}" Grid.Column="2" Grid.Row="4" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label   Content="Place of Origin:" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label    Content="{Binding collection}" Grid.Column="2" Grid.Row="5" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label   Content="Destination place:" Grid.Column="0" Grid.Row="6" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label    Content="{Binding destination}" Grid.Column="2" Grid.Row="6" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label   Content="distance:" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+            <Label    Content="{Binding destination}" Grid.Column="2" Grid.Row="7" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"   FontSize="16"/>
+        </Grid>
+        <Button x:Name="close_Copy" Content="close" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="14" FontWeight="Bold" Background="#FFFA0A0A" Click="close_Click" Grid.Column="4"/>
+    </Grid>
+</Window>

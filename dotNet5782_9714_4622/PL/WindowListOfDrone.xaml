@@ -1,0 +1,59 @@
+﻿<Window x:Class="PL.WindowListOfDrone"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        mc:Ignorable="d"
+        Title="WindowListOfDrone" Height="640" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="144*"/>
+            <RowDefinition Height="366*"/>
+            <RowDefinition Height="51*"/>
+        </Grid.RowDefinitions>
+        <Grid Name="UpGrid" Height="auto" Grid.Row="0" Width="auto" Margin="0,0,0,143" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions >
+            <ComboBox Name="WeigtSelector" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="3" FontSize="16" SelectionChanged="WeigtSelector_SelectionChanged" />
+            <Label Content="WeigtSelector" Grid.Column="2" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <ComboBox Name="StatusSelector" Grid.Column="1" FontSize="16" SelectionChanged="StatusSelector_SelectionChanged" Height="64" VerticalAlignment="Top" />
+            <Label Content="StatusSelector" Grid.Column="0" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"  />
+        </Grid>
+        <Grid Name="bel" Height="auto" Grid.Row="2" Margin="0,366,0,0" Grid.RowSpan="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.4*"/>
+                <ColumnDefinition Width="0.4*"/>
+            </Grid.ColumnDefinitions >
+            <Button Content="Add new drone" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  FontSize="20" Click="Button_Click_1"  Grid.Column="3"/>
+            <Button x:Name="close" Content="close"  FontSize="14" FontWeight="Bold" Background="#FFFA0A0A" Click="close_Click" Grid.Column="5"/>
+            <Button x:Name="updat"   Click="updatS_Click" Grid.Column="4">
+                <Button.Background>
+                    <ImageBrush ImageSource="/כפתור ריענון.png"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <ListView Name = "DroneListView" ItemsSource="{Binding}"    FontSize="24" Margin="0,5,0,104" Grid.RowSpan="2" SelectionChanged="DroneListView_SelectionChanged" Grid.Row="1" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=ID}" Header="ID"  Width="auto"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=model}" Header="model" Width="auto"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=weight}" Header="weight" Width="auto"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=battery}" Header="battery" Width="auto"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=statusOfDrone}" Header="status Of Drone" Width="auto"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=droneLocation}" Header="drone Location" Width="auto"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=parcelNumber}" Header="parcelNumber" Width="auto"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

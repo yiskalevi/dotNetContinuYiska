@@ -1,0 +1,93 @@
+﻿<Window x:Class="PL.StationWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        mc:Ignorable="d"
+        Title="StationWindow" Height="640" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="stationAll" Margin="0,0,0,-6">
+        <Button x:Name="close" Content="close" HorizontalAlignment="Left" Margin="746,0,0,0" VerticalAlignment="Top" Height="33" Width="44" FontSize="14" FontWeight="Bold" Background="#FFFA0A0A" Click="close_Click"/>
+        <Grid x:Name="addGird" Visibility="Hidden" Grid.Column="1" Grid.ColumnSpan="4" Margin="10,10,19,0" Grid.RowSpan="12" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="58*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="58*"/>
+            </Grid.RowDefinitions>
+            <Label  Name="station" Content="station"   RenderTransformOrigin="0.627,0.104" FontSize="24"  FontWeight="Bold" FontStyle="Normal" Grid.Column="1"  Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label  Name="ID" Content="ID:"  RenderTransformOrigin="0.627,0.104" FontSize="14" HorizontalAlignment="Center"  Grid.Column="1"  Grid.Row="1"  VerticalAlignment="Center"/>
+            <TextBox  Name="IDN"   TextWrapping="Wrap"  TextChanged="IDN_TextChanged"  FontSize="14" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="2"  Grid.Row="1"  />
+            <Label  Name="IDNErrow" Visibility="Hidden"  Foreground="#FFFA0909"    Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"   FontSize="16" FontStyle="Normal" />
+            <Label  Name="name" Content="name:"  RenderTransformOrigin="0.627,0.104"  Height="30" Width="48"  FontSize="14" HorizontalAlignment="Center"  Grid.Column="1"  Grid.Row="3"  VerticalAlignment="Center"/>
+            <TextBox Name="nemaT"    TextWrapping="Wrap"   TextChanged="nemaT_TextChanged" FontSize="14" HorizontalAlignment="Stretch"  Grid.Column="2"  Grid.Row="3" VerticalAlignment="Stretch"/>
+            <Label Name="Latitude" Content="Latitude:"  RenderTransformOrigin="0.627,0.104"  Height="44" Width="110" FontSize="14" HorizontalAlignment="Left"  Grid.Column="1"  Grid.Row="5"  VerticalAlignment="Top" Margin="62,2,0,0" Grid.RowSpan="2" />
+            <TextBox  Name="LatitudeN"  Text="" TextWrapping="Wrap" TextChanged="LatitudeN_TextChanged" FontSize="14" HorizontalAlignment="Stretch"  Grid.Column="2"  Grid.Row="5" VerticalAlignment="Stretch"/>
+            <Label  Name="LatitudeNErrow" Visibility="Hidden"  Foreground="#FFFA0909"    Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"   FontSize="16" FontStyle="Normal" />
+            <Label  Content="Longitude:"   RenderTransformOrigin="0.627,0.104"  Height="26" Width="66"  FontSize="14" HorizontalAlignment="Center"  Grid.Column="1"  Grid.Row="7"  VerticalAlignment="Center" />
+            <TextBox  Name="LongitudeN"    Text="" TextWrapping="Wrap"  TextChanged="LongitudeN_TextChanged" FontSize="14" HorizontalAlignment="Stretch"  Grid.Column="2"  Grid.Row="7" VerticalAlignment="Stretch"/>
+            <Label  Name="LongitudeNErrow" Visibility="Hidden"  Foreground="#FFFA0909"    Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"   FontSize="16" FontStyle="Normal" />
+            <Label  Content="number Of Stands:" Height="59" FontSize="14" HorizontalAlignment="Center"  Grid.Column="1"  Grid.Row="9"  VerticalAlignment="Top" Margin="0,2,0,0" Grid.RowSpan="2"/>
+            <TextBox  Name="numberOfStandsT"  TextWrapping="Wrap"  TextChanged="numberOfStandsT_TextChanged" FontSize="14" HorizontalAlignment="Left"  Grid.Column="2"  Grid.Row="9" Grid.ColumnSpan="2" Width="184"/>
+            <Label  Name="numberOfStandsTErrow" Visibility="Hidden"  Foreground="#FFFA0909"    Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="10" VerticalAlignment="Stretch"   FontSize="16" FontStyle="Normal" />
+            <Button Name="add" Content="add"  Click="add_Click" IsEnabled="False" Grid.Column="3" Margin="10,28,10,10" Grid.RowSpan="2" Grid.Row="10" Grid.ColumnSpan="2"/>
+        </Grid>
+        <Grid x:Name="upGird" Margin="10,10,0,10" Grid.RowSpan="12" Grid.ColumnSpan="5" Visibility="Hidden" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="58*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="58*"/>
+            </Grid.RowDefinitions>
+            <Label  Name="station2" Content="station"   RenderTransformOrigin="0.627,0.104" FontSize="24"  FontWeight="Bold" FontStyle="Normal" Grid.Column="1"  Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label  Name="ID2" Content="ID:"  RenderTransformOrigin="0.627,0.104" FontSize="14" HorizontalAlignment="Center"  Grid.Column="1"  Grid.Row="1"  VerticalAlignment="Center"/>
+            <Label  Name="IDN2"   Content="{Binding ID}" FontSize="14" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="2"  Grid.Row="1"  />
+            <Label  Name="name2" Content="name:"  RenderTransformOrigin="0.627,0.104"  Height="30" Width="48"  FontSize="14" HorizontalAlignment="Center"  Grid.Column="1"  Grid.Row="3"  VerticalAlignment="Center"/>
+            <TextBox Name="nemaT2"  Text="{Binding name}"  TextWrapping="Wrap"   TextChanged="nemaT_TextChanged" FontSize="14" HorizontalAlignment="Stretch"  Grid.Column="2"  Grid.Row="3" VerticalAlignment="Stretch"/>
+            <Label Name="loacation" Content="loacation:"  RenderTransformOrigin="0.627,0.104"  Height="44" Width="110" FontSize="14" HorizontalAlignment="Left"  Grid.Column="1"  Grid.Row="5"  VerticalAlignment="Top" Margin="62,2,0,0" Grid.RowSpan="2" />
+            <Label  Name="LatitudeN2" Content="{Binding stationLocation}"  FontSize="14" HorizontalAlignment="Stretch"  Grid.Column="2"  Grid.Row="5" VerticalAlignment="Stretch"/>
+            <Label  Content="number Of Stands:" Height="59" FontSize="14" HorizontalAlignment="Center"  Grid.Column="1"  Grid.Row="7"  VerticalAlignment="Top" Margin="0,2,0,0" Grid.RowSpan="2"/>
+            <TextBox  Name="numberOfStandsT2" Text="{Binding numberOfStands}" TextWrapping="Wrap"  TextChanged="numberOfStandsT_TextChanged" FontSize="14" HorizontalAlignment="Stretch"  Grid.Column="2"  Grid.Row="7" VerticalAlignment="Stretch"/>
+            <Label  Name="numberOfStandsTErrow2"  Visibility="Hidden"  Foreground="#FFFA0909"    Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="10" VerticalAlignment="Stretch"   FontSize="16" FontStyle="Normal" />
+            <Button Name="updat" Content="updat" Click="updat_Click" IsEnabled="False" Grid.Row="11" Grid.Column="3" Margin="18,10,10,10" />
+            <Label Name="dt"  Content="drones in Charging :"  VerticalAlignment="Top" RenderTransformOrigin="0.627,0.104" FontSize="12" Height="59" Margin="56,73,32,0" Grid.Column="3" Grid.RowSpan="2"/>
+            <ListView Name="drone" ItemsSource="{Binding numberOfStands}" Margin="0,105,10,10" SelectionChanged="ListView_SelectionChanged" Grid.Column="3" Grid.RowSpan="11">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </Grid>
+</Window>

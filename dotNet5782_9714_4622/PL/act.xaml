@@ -1,0 +1,20 @@
+﻿<Window x:Class="PL.act"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        mc:Ignorable="d"
+        Title="act" Height="640" Width="800" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="/DRONE.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Button Name="dronView" Content="drone view" HorizontalAlignment="Left" Margin="106,412,0,0" VerticalAlignment="Top" Height="124" Width="118" FontSize="16" IsDefault="True" Background="#FF836607" FontWeight="Bold" Click="dronView_Click" />
+        <Button  Name="stationView" Content="station view" HorizontalAlignment="Left" Margin="255,415,0,0" VerticalAlignment="Top" Height="124" Width="118" FontSize="16" Background="#FF836607" FontWeight="Bold" Click="stationView_Click" />
+        <Button Name="customerView" Content="customer view" HorizontalAlignment="Left" Margin="419,415,0,0" VerticalAlignment="Top" Height="124" Width="118" FontSize="16" Background="#FF836607" FontWeight="Bold" Click="customerView_Click" />
+        <Button Name="parcelView"  Content="parcel view" HorizontalAlignment="Left" Margin="570,415,0,0" VerticalAlignment="Top" Height="124" Width="118" FontSize="16" Background="#FF836607" FontWeight="Bold" Click="parcelView_Click" />
+        <Label Content="Welcome to the system" HorizontalAlignment="Left" Margin="-31,25,0,0" VerticalAlignment="Top" Height="73" Width="616" FontSize="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="close" Content="close" HorizontalAlignment="Left" Margin="746,10,0,0" VerticalAlignment="Top" Height="33" Width="44" FontSize="14" FontWeight="Bold" Background="#FFFA0A0A" Click="close_Click"/>
+    </Grid>
+</Window>

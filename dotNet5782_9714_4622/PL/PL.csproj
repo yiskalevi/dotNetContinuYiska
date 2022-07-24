@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DRONE.jpg" />
+    <None Remove="כפתור ריענון.png" />
+    <None Remove="מסך ראשי.jpg" />
+    <None Remove="שדה תעופה.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="DRONE.jpg" />
+    <Resource Include="כפתור ריענון.png" />
+    <Resource Include="מסך ראשי.jpg" />
+    <Resource Include="שדה תעופה.jpg" />
+  </ItemGroup>
+
+</Project>

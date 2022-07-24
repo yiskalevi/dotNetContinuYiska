@@ -1,0 +1,81 @@
+﻿<Window x:Class="PL.CustomerWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        mc:Ignorable="d"
+        Title="CustomerWindow1" Height="640" Width="800" WindowStartupLocation="CenterOwner">
+    <Grid x:Name="customerAll" Margin="0,0,0,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="58*"/>
+        </Grid.RowDefinitions>
+        <Label  Name="customer" Content="customer"   RenderTransformOrigin="0.627,0.104" FontSize="24"  FontWeight="Bold" FontStyle="Normal" Grid.Column="1"  Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label  Name="ID" Content="ID:"  RenderTransformOrigin="0.627,0.104" FontSize="14" HorizontalAlignment="Center"  Grid.Column="1"  Grid.Row="1"  VerticalAlignment="Center"/>
+        <TextBox  Name="IDN"   Text="" TextWrapping="Wrap"  TextChanged="IDN_TextChanged"  FontSize="14" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="2"  Grid.Row="1"  />
+        <Label  Name="IDNErrow" Visibility="Hidden"  Foreground="#FFFA0909"    Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch"   FontSize="16" FontStyle="Normal" />
+        <Label  Name="name" Content="name:"  RenderTransformOrigin="0.627,0.104"  Height="30" Width="48"  FontSize="14" HorizontalAlignment="Center"  Grid.Column="1"  Grid.Row="3"  VerticalAlignment="Center"/>
+        <TextBox Name="nemaT"   Text="" TextWrapping="Wrap"   TextChanged="nemaT_TextChanged" FontSize="14" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="2"  Grid.Row="3" />
+        <Label Name="Latitude" Content="Latitude:"  RenderTransformOrigin="0.627,0.104"  Height="44" Width="110" FontSize="14" HorizontalAlignment="Left"  Grid.Column="1"  Grid.Row="5"  VerticalAlignment="Top" Margin="62,2,0,0" Grid.RowSpan="2" />
+        <TextBox  Name="LatitudeN"  Text="" TextWrapping="Wrap" TextChanged="LatitudeN_TextChanged" FontSize="14" HorizontalAlignment="Stretch"  Grid.Column="2"  Grid.Row="5" VerticalAlignment="Stretch"/>
+        <Label  Name="LatitudeNErrow" Visibility="Hidden"  Foreground="#FFFA0909"    Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"   FontSize="16" FontStyle="Normal" />
+        <Label  Content="Longitude:"   RenderTransformOrigin="0.627,0.104"  Height="26" Width="66"  FontSize="14" HorizontalAlignment="Center"  Grid.Column="1"  Grid.Row="7"  VerticalAlignment="Center" />
+        <TextBox  Name="LongitudeN"    Text="" TextWrapping="Wrap"  TextChanged="LongitudeN_TextChanged" FontSize="14" HorizontalAlignment="Stretch"  Grid.Column="2"  Grid.Row="7" VerticalAlignment="Stretch"/>
+        <Label  Name="LongitudeNErrow" Visibility="Hidden"  Foreground="#FFFA0909"    Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch"   FontSize="16" FontStyle="Normal" />
+        <Label  Content="phone:" Height="59" FontSize="14" HorizontalAlignment="Center"  Grid.Column="1"  Grid.Row="9"  VerticalAlignment="Top" Margin="0,2,0,0" Grid.RowSpan="2"/>
+        <TextBox  Name="phoneT"    Text="" TextWrapping="Wrap"  FontSize="14" VerticalAlignment="Bottom" Grid.Column="2"  Grid.Row="9"  TextChanged="phoneT_TextChanged" Height="54"/>
+        <Button x:Name="close" Content="close" HorizontalAlignment="Left" Margin="746,0,0,0" VerticalAlignment="Top" Height="33" Width="44" FontSize="14" FontWeight="Bold" Background="#FFFA0A0A" Click="close_Click"/>
+        <Grid x:Name="addGird" Grid.Row="10"  Visibility="Hidden" Grid.Column="3"    >
+            <Button Name="add" Content="add" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Click="add_Click" IsEnabled="False" />
+        </Grid>
+        <Grid x:Name="upGird" Margin="10,0,0,10" Grid.RowSpan="11" Grid.ColumnSpan="2" Grid.Column="3" Visibility="Hidden" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions >
+            <Button Name="updat" Content="updat"  Height="37" Width="84" Click="updat_Click" IsEnabled="False" VerticalAlignment="Center"  Grid.Column="2"  Grid.Row="3"/>
+            <Label  Content="received parcel" Height="58" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="2"  Grid.Row="1" />
+            <ListView Name="received" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Grid.Column="2"  Grid.Row="2"  >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Label  Content="parcel shipped" Height="58" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="1"  Grid.Row="1"/>
+            <ListView Name="shipped" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Grid.Column="1"  Grid.Row="2"  >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ArrayOfManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Manager>
+    <ID>4622</ID>
+    <password>4622</password>
+  </Manager>
+  <Manager>
+    <ID>9714</ID>
+    <password>9714</password>
+  </Manager>
+</ArrayOfManager>

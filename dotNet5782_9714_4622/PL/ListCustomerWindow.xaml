@@ -1,0 +1,33 @@
+﻿<Window x:Class="PL.ListCustomerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        mc:Ignorable="d"
+        Title="ListCustomerWindow" Height="640" Width="800" WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <ListView Name = "listCustomer"  ItemsSource="{Binding}"  Margin="141,121,152,51" SelectionChanged="listCustomer_SelectionChanged" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=ID}" Header="ID"  Width="auto"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=name}" Header="name" Width="auto"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=phone}" Header="phone" Width="auto"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=numberOfP}" Header="number Of Parcel" Width="auto"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=numberOfPNotDelivered}" Header="number Of Parcel Not Delivered" Width="auto"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=numberOfExpectedP}" Header="number Of Expected Parcel" Width="auto"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=numberOfSentedP}" Header="number Of Sented Parcel" Width="auto"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="customer view" HorizontalAlignment="Center" VerticalAlignment="Top" Height="68" Width="383" HorizontalContentAlignment="Center" FontSize="36" RenderTransformOrigin="0.593,0.515" FontWeight="Bold"/>
+        <Button Name="updat"  HorizontalAlignment="Left" Margin="687,0,0,0" VerticalAlignment="Top"  Height="33" Width="44" Click="updatS_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/כפתור ריענון.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="close" Content="close" HorizontalAlignment="Left" Margin="746,0,0,0" VerticalAlignment="Top" Height="33" Width="44" FontSize="14" FontWeight="Bold" Background="#FFFA0A0A" Click="close_Click"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="-187,209,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Button Name="add" Content="add" HorizontalAlignment="Left" Margin="25,67,0,0" VerticalAlignment="Top" Height="47" Width="97" FontSize="14" Background="#FFEEC010" FontWeight="Bold" Click="add_Click"/>
+    </Grid>
+</Window>
