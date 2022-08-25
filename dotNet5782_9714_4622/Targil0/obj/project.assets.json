@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\dotNet5782_9714_4622New\\dotNet5782_9714_4622\\Targil0\\Targil0.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\dotNetContinuYiska\\dotNet5782_9714_4622\\Targil0\\Targil0.csproj",
       "projectName": "Targil0",
-      "projectPath": "C:\\Users\\user\\Source\\Repos\\dotNet5782_9714_4622New\\dotNet5782_9714_4622\\Targil0\\Targil0.csproj",
+      "projectPath": "C:\\Users\\user\\Source\\Repos\\dotNetContinuYiska\\dotNet5782_9714_4622\\Targil0\\Targil0.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Source\\Repos\\dotNet5782_9714_4622New\\dotNet5782_9714_4622\\Targil0\\obj\\",
+      "outputPath": "C:\\Users\\user\\Source\\Repos\\dotNetContinuYiska\\dotNet5782_9714_4622\\Targil0\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

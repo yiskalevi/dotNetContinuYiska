@@ -141,7 +141,7 @@ namespace PL {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PL;V1.0.0.0;component/customeractivities.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PL;component/customeractivities.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CustomerActivities.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

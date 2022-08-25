@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\user\Source\Repos\dotNet5782_9714_4622New\dotNet5782_9714_4622\PL\obj\Debug\net5.0-windows\
+C:\Users\user\source\repos\dotNetContinuYiska\dotNet5782_9714_4622\PL\obj\Debug\net5.0-windows\
 PL
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\user\Source\Repos\dotNet5782_9714_4622New\dotNet5782_9714_4622\PL\App.xaml
+C:\Users\user\source\repos\dotNetContinuYiska\dotNet5782_9714_4622\PL\App.xaml
 111328115213
 
 16503470182
-198-2061303381
+198-1926661976
 act.xaml;CustomerActivities.xaml;CustomerWindow1.xaml;ListCustomerWindow.xaml;ListParcelWindow.xaml;ListStationWindow.xaml;MainWindow.xaml;parcelWindow.xaml;StationWindow1.xaml;WindowDrone_.xaml;WindowListOfDrone.xaml;
 
-True
+False
 

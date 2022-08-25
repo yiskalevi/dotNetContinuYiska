@@ -1,0 +1,17 @@
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\bin\Debug\net5.0\DalXml.deps.json
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\bin\Debug\net5.0\DalXml.dll
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\bin\Debug\net5.0\ref\DalXml.dll
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\bin\Debug\net5.0\DalXml.pdb
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\bin\Debug\net5.0\DalFacade.dll
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\bin\Debug\net5.0\DalObject.dll
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\bin\Debug\net5.0\DalFacade.pdb
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\bin\Debug\net5.0\DalObject.pdb
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\obj\Debug\net5.0\DalXml.csproj.AssemblyReference.cache
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\obj\Debug\net5.0\DalXml.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\obj\Debug\net5.0\DalXml.AssemblyInfoInputs.cache
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\obj\Debug\net5.0\DalXml.AssemblyInfo.cs
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\obj\Debug\net5.0\DalXml.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\obj\Debug\net5.0\DalXml.csproj.CopyComplete
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\obj\Debug\net5.0\DalXml.dll
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\obj\Debug\net5.0\ref\DalXml.dll
+C:\Users\user\Source\Repos\dotNetContinuYiska\dotNet5782_9714_4622\DalXml\obj\Debug\net5.0\DalXml.pdb

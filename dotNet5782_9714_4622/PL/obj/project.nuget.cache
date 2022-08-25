@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FQxkMAATxHZ1NCCz3yr/43sAkwSxVbPLFciOVV45rPCzdfjORvhh50TonIPQcOpLjJAEjMdDHk3mWxAOmhRBfw==",
+  "dgSpecHash": "3OW+XoB7eq+KG+dPrWnoODf8A+pden1FWQ+XI4jJ7NYDgWgy3PeDDoZUidauns49sCzxNz154YPhN2f8jauJAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Source\\Repos\\dotNet5782_9714_4622New\\dotNet5782_9714_4622\\PL\\PL.csproj",
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\dotNetContinuYiska\\dotNet5782_9714_4622\\PL\\PL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.build.framework\\17.0.0\\microsoft.build.framework.17.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

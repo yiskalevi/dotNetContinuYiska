@@ -29,7 +29,7 @@
 
         <Button Name="newC" Content="New customer" FontWeight="Bold" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="70" Width="104" FontSize="14"  Grid.Row="5" Grid.Column="2" Click="newC_Click" Background="#FF993F03"/>
         <Button Name="enter" Content="enter" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="70" Width="104" FontSize="36" Click="Button_Click" Grid.Row="5" FontWeight="Bold" Grid.Column="3" Background="#FF993F03"/>
-        <Label Content="An existing user in the system" FontSize="28" FontWeight="Bold"  Grid.ColumnSpan="3"  Grid.Row="1" Margin="0,0,10,0" />
+        <Label Content="An existing user in the system hi" FontSize="28" FontWeight="Bold"  Grid.ColumnSpan="3"  Grid.Row="1" Margin="0,0,10,0" />
         <Button Name="manager" Content="manager" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   Grid.Column="1" Grid.Row="2" Click="manager_Click"  FontSize="24" FontWeight="Bold" Background="#FF993F03"/>
         <Button Name="customer" Content="customer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   Grid.Column="2" Grid.Row="2" FontSize="24" FontWeight="Bold" Click="customer_Click" Background="#FF993F03"/>
         <Grid x:Name="managerGird" Visibility="Hidden"  Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">

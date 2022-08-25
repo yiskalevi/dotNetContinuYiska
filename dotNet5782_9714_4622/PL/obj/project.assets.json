@@ -474,11 +474,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\dotNet5782_9714_4622New\\dotNet5782_9714_4622\\PL\\PL.csproj",
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\dotNetContinuYiska\\dotNet5782_9714_4622\\PL\\PL.csproj",
       "projectName": "PL",
-      "projectPath": "C:\\Users\\user\\Source\\Repos\\dotNet5782_9714_4622New\\dotNet5782_9714_4622\\PL\\PL.csproj",
+      "projectPath": "C:\\Users\\user\\source\\repos\\dotNetContinuYiska\\dotNet5782_9714_4622\\PL\\PL.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Source\\Repos\\dotNet5782_9714_4622New\\dotNet5782_9714_4622\\PL\\obj\\",
+      "outputPath": "C:\\Users\\user\\source\\repos\\dotNetContinuYiska\\dotNet5782_9714_4622\\PL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -499,8 +499,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\user\\Source\\Repos\\dotNet5782_9714_4622New\\dotNet5782_9714_4622\\BL\\BL.csproj": {
-              "projectPath": "C:\\Users\\user\\Source\\Repos\\dotNet5782_9714_4622New\\dotNet5782_9714_4622\\BL\\BL.csproj"
+            "C:\\Users\\user\\source\\repos\\dotNetContinuYiska\\dotNet5782_9714_4622\\BL\\BL.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\repos\\dotNetContinuYiska\\dotNet5782_9714_4622\\BL\\BL.csproj"
             }
           }
         }

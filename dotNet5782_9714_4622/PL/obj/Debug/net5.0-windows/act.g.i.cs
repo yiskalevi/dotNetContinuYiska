@@ -93,7 +93,7 @@ namespace PL {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PL;V1.0.0.0;component/act.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PL;component/act.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\act.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
