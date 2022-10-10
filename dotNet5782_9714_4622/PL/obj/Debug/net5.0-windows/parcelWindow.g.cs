@@ -293,7 +293,7 @@ namespace PL {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PL;component/parcelwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PL_knmobpym_wpftmp;component/parcelwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\parcelWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
